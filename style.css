@@ -1,0 +1,158 @@
+/* Resetting margin to 0 for all elements */
+* {
+    margin: 0;
+}
+
+/* Styling the home container with a background color */
+.home {
+    background-color: #427D9D;
+    height: 100vh;
+}
+
+/* Styling the header container */
+.header {
+    color: #fff; /* Text color */
+    padding: 30px; /* Padding around the header */
+    display: flex;
+    justify-content: space-between; /* Aligns the children to the start and end of the header */
+    align-items: center; /* Aligns the children vertically in the center */
+}
+
+/* Styling the left section of the header */
+.left a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Text color for links in the left section */
+    font-size: x-large;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+/* Styling the right section of the header */
+.right {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling the list items in the right section */
+.right ul.menu {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Display the list items in a row */
+    margin: 0;
+    padding: 0;
+}
+
+.right li {
+    margin: 0 15px; /* Adjust spacing between list items */
+}
+
+.right a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #DDF2FD; /* Text color for links in the right section */
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.right a:hover {
+    color: #fff;
+}
+
+
+
+
+
+.textbox{
+    color: #DDF2FD;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 190px;
+}
+
+.textbox a{
+    background-color: #356580;
+    padding: 10px 18px;
+    color: #DDF2FD;
+    border-radius: 2em;
+    text-decoration: none;
+    position: relative;
+    top: 25px;
+    transition: background-color 0.2s, color 0.2s; /* Added color transition */
+
+
+}
+
+.textbox a:hover{
+
+    color: #ffffff;
+    background-color: #2b5369;
+}
+
+/* Styling the menu icon for smaller screens */
+.menu-icon {
+    display: none; /* Initially hide the menu icon */
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Media query for screens up to 617px */
+@media (max-width: 617px) {
+    .right ul {
+        display: none; /* Hide the menu list by default on smaller screens */
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #1a1f22;
+        height: 190px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .right li {
+        display: block;
+        margin: 15px 0;
+        padding: 10px 10px;
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon on smaller screens */
+    }
+}
+
+
+/* Media query for screens up to 320px */
+@media (max-width: 425px) {
+
+
+    .left a {
+        font-size: larger;
+    }
+    .right ul {
+        display: none; /* Hide the menu list by default on smaller screens */
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #1a1f22;
+        height: 190px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right li {
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon on smaller screens */
+    }
+
+    .textbox {
+        font-size: 8px !important;
+    }
+
+    .textbox a{
+        padding: 5px 10px;
+    }
+}
